@@ -1,8 +1,8 @@
 const functions = require('./functions');
 
-beforeEach(() => initDatabase());
+beforeAll(() => initDatabase());
 
-afterEach(() => closeDatabase());
+afterAll(() => closeDatabase());
 
 const initDatabase = () => console.log(`Database initialised ... `);
 const closeDatabase = () => console.log(`Database closed.`);
